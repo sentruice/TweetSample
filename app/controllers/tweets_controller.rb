@@ -1,6 +1,7 @@
 class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all
+    @tweets = Tweet.order("created_at DESC")
   end
 
   def show
@@ -11,7 +12,6 @@ class TweetsController < ApplicationController
 
   def create
     @tweet = Tweet.new
-    @tweet.title = params[:tweet][:title]
     @tweet.content = params[:tweet][:content]
     @tweet.save
     redirect_to '/tweets/index'

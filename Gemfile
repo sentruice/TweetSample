@@ -5,11 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
 
-<<<<<<< HEAD:gemfile
-#gem 'sqlite3', :group => [:development, :test]
+gem 'sqlite3'
 
-=======
->>>>>>> b2bc16614e60c4612068557b4762d5e8cc9e115c:Gemfile
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -44,7 +41,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'devise'
 
-group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
-end
+#group :production do
+ # gem 'pg', '0.15.1'
+ # gem 'rails_12factor', '0.0.2'
+#end
